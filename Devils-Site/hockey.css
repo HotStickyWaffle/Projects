@@ -19,20 +19,6 @@ h2 {
     font-size: 65px;
 }
 
-img {
-    height: 200px;
-    width: 300px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom: 2px solid black;
-}
-
-.stats {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 .position {
     display: flex;
     flex-direction: row;
@@ -42,21 +28,86 @@ img {
 }
 
 .playercard {
-
-    margin-bottom: 25px;
-    background-color: rgb(172, 164, 164);
-    border-radius: 10px;
     width: 300px;
     height: 400px;
-    border: 2px black solid;
+    margin-bottom: 25px;
     box-shadow: 15px 15px 15px black;
     text-align: center;
+    border-radius: 10%;
 }
 
-h3 {
+.image {
+    height: 50%;
+    width: 300px;
+    box-sizing: border-box;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 2px solid black;
+    border-bottom: none;
+    /* background-size: contain; */
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    /* width: auto; */
+    /* border-top-left-radius: 10px;
+    border-top-right-radius: 10px; */
+    /* object-fit: contain;
+    oerflow: hidden; */
+
+}
+
+.nametag {
+    height: 5%;
+    display: flex;
+    width: 100%;
     background-color: black;
     color: white;
     margin-top: 0px;
     margin-bottom: 0px;
-    /* align-self: flex-start; */
+    align-self: flex-start;
+    justify-content: center;
+}
+
+h3 {
+    margin: 0;
+    font-size: 1rem
+}
+
+.stats {
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    font-size: .75em;
+    background-color: #CE1126;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-top: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+table {
+    align-self: center;
+    border-collapse: collapse;
+    width: 95%;
+}
+
+th,
+td {
+    border: 1px solid black;
+
+}
+
+th {
+    background-color: black;
+    color: #ffffff;
+}
+
+td {
+    background-color: #ffffff;
+    color: #000000;
 }
