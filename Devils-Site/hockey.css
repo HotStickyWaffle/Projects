@@ -28,7 +28,9 @@ img {
 }
 
 .stats {
-    padding
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .position {
@@ -40,6 +42,7 @@ img {
 }
 
 .playercard {
+
     margin-bottom: 25px;
     background-color: rgb(172, 164, 164);
     border-radius: 10px;
@@ -48,4 +51,12 @@ img {
     border: 2px black solid;
     box-shadow: 15px 15px 15px black;
     text-align: center;
+}
+
+h3 {
+    background-color: black;
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    /* align-self: flex-start; */
 }
