@@ -24,43 +24,38 @@ h2 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    flex-basis: 33%;
 }
 
 .playercard {
-    width: 300px;
-    height: 400px;
+    width: 30%;
+    height: auto;
+    aspect-ratio: 3 / 4;
     margin-bottom: 25px;
-    box-shadow: 15px 15px 15px black;
+    box-shadow: 15px 15px 15px #000000;
     text-align: center;
     border-radius: 10%;
+    /* flex-basis: 30%; */
+
 }
 
-.image {
+.playercard .image {
     height: 50%;
-    width: 300px;
+    width: 100%;
     box-sizing: border-box;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    border: 2px solid black;
+    border: 10px solid black;
     border-bottom: none;
-    /* background-size: contain; */
 }
 
 img {
     height: 100%;
     width: 100%;
-    /* width: auto; */
-    /* border-top-left-radius: 10px;
-    border-top-right-radius: 10px; */
-    /* object-fit: contain;
-    oerflow: hidden; */
 
 }
 
-.nametag {
+.playercard .nametag {
     height: 5%;
-    display: flex;
     width: 100%;
     background-color: black;
     color: white;
@@ -75,16 +70,15 @@ h3 {
     font-size: 1rem
 }
 
-.stats {
+.playercard .stats {
     height: 45%;
-    display: flex;
-    flex-direction: column;
+    width: 100%;
     justify-content: center;
     align-content: flex-start;
     font-size: .75em;
     background-color: #CE1126;
     box-sizing: border-box;
-    border: 2px solid black;
+    border: 10px solid black;
     border-top: none;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
