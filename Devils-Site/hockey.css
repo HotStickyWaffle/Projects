@@ -35,7 +35,6 @@ h2 {
     text-align: center;
     border-radius: 10%;
     /* flex-basis: 30%; */
-
 }
 
 .playercard .image {
@@ -44,7 +43,7 @@ h2 {
     box-sizing: border-box;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    border: 10px solid black;
+    border: 1em solid black;
     border-bottom: none;
 }
 
@@ -55,37 +54,43 @@ img {
 }
 
 .playercard .nametag {
-    height: 5%;
+    display: flex;
+    height: 7.5%;
     width: 100%;
     background-color: black;
     color: white;
     margin-top: 0px;
     margin-bottom: 0px;
-    align-self: flex-start;
+    align-content: center;
     justify-content: center;
+    /* font-size: 2.5em; */
 }
 
-h3 {
+.nametag p {
     margin: 0;
-    font-size: 1rem
+    font-size: 1.75rem;
+    /* line-height: 90%; */
+    align-self: center;
 }
 
 .playercard .stats {
-    height: 45%;
+    height: 42.5%;
     width: 100%;
+    display: flex;
     justify-content: center;
-    align-content: flex-start;
-    font-size: .75em;
+    align-content: center;
+    font-size: 1rem;
     background-color: #CE1126;
     box-sizing: border-box;
-    border: 10px solid black;
+    border: 1em solid black;
     border-top: none;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
 table {
-    align-self: center;
+    /* align-self: center; */
+    /* justify-self: center; */
     border-collapse: collapse;
     width: 95%;
 }
